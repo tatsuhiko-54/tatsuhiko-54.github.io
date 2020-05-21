@@ -1,0 +1,176 @@
+.header {
+  width: 100%;
+  height: 55px;
+  background-color: rgba(27, 27, 27, 0.925);
+  display: flex;
+  position: relative;
+  position: fixed;
+  z-index: 10;
+}
+.header__title {
+  cursor: pointer;
+  color: #d6d5d5;
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  position: absolute;
+    top: 15px;
+    left: 60px;
+}
+.header__title:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+.header__nav {
+  cursor: pointer;
+  position: absolute;
+    top: 20px;
+    right: 110px;
+}
+.headlink {
+  color: lightgray;
+  text-decoration: none;
+  padding: 10px;
+}
+.headlink:hover {
+  color: #ffffff;
+}
+
+
+
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+
+}
+.top-image {
+  margin-left: 410px;
+  margin-top: 35px;
+}
+
+.title-man {
+  font-size: 55px;
+  text-align: center;
+}
+
+
+.skill {
+  margin-top: 280px;
+  margin-bottom: 40px;
+  font-size: 45px;
+  text-align: center;
+}
+.skill-list {
+  display: flex;
+  align-items: center;
+  margin-left: 170px;
+}
+.skill-list2{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+  padding-left: 30px;
+}
+
+.ruby {
+  height: 110px;
+  width: 110px;
+  margin-top: 55px;
+  margin-left: 20px;
+}
+.rails {
+  height: 230px;
+  width: 220px;
+  margin-left: 50px;
+  margin-bottom: 70px;
+}
+.git {
+  height: 160px;
+  width: 160px;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+
+.works {
+  margin-top: 150px;
+  margin-bottom: 60px;
+  font-size: 45px;
+  text-align: center;
+}
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+.box {
+  position: relative;
+}
+.furima-image {
+  cursor: pointer;
+  border: solid #f6f6f6;
+  margin-left: 485px;
+  margin-bottom: 15px ;
+  margin-top: 10px;
+  z-index: 1;
+  position: relative;
+}
+.linkman {
+  background-color: hotpink;
+  display: block;
+  width: 330px;
+  height: 340px;
+  z-index: 1;
+  opacity: 0;
+  position: absolute;
+    top: 20px;
+    right: 485px;
+}
+.detail {
+  margin-top: 10px;
+  color: rgb(100, 100, 100);
+  text-align: center;
+}
+
+
+.footer {
+  width: 100%;
+  height: 145px;
+  background-color: rgba(27, 27, 27, 0.925);
+  color: lightgray;
+  display: flex;
+  position: relative;
+  margin-top: 100px;
+}
+.footer__title {
+  font-size: 23px;
+  color: #ffffff;
+  margin: 40px 60px;
+}
+.copy {
+  text-align: center;
+  margin-top: 115px;
+  margin-left: 280px;
+  font-size: 10px;
+}
+.footer__btn {
+  cursor: pointer;
+  height: 80px;
+  width: 80px;
+  z-index: 10;
+  position: fixed;
+  bottom: 20px;
+  right: 32px;
+  background-color: rgba(27, 27, 27, 0.925);
+  line-height: 80px;
+  text-align: center;
+  border-radius: 60px;
+  padding: 15px;
+  color: white;
+  border: solid #f6f6f6;
+}
+.footer__btn:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.1s ease;
+}
