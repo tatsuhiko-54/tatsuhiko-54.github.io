@@ -42,16 +42,29 @@
 .content {
   width: 90%;
   margin: 0 auto;
-
+  position: relative;
 }
 .top-image {
-  margin-left: 410px;
-  margin-top: 35px;
+  margin-left: 420px;
+  margin-top: 140px;
+  z-index: 1;
+}
+.man-2 {
+  z-index: 0;
+  position: absolute;
+    top: 140px;
+    left: 420px;
+  opacity: 0;
 }
 
 .title-man {
   font-size: 55px;
-  text-align: center;
+  margin-left: 350px;
+  display: flex;
+  justify-content: flex-start;
+}
+.l {
+  opacity: 0;
 }
 
 
@@ -94,38 +107,56 @@
 
 
 .works {
-  margin-top: 150px;
+  margin-top: 110px;
   margin-bottom: 60px;
   font-size: 45px;
   text-align: center;
 }
-.title {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 25px;
-}
-.box {
+
+.giga-man {
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px;
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
   position: relative;
 }
+
 .furima-image {
+  width: 300px;
   cursor: pointer;
-  border: solid #f6f6f6;
-  margin-left: 485px;
-  margin-bottom: 15px ;
-  margin-top: 10px;
+  box-shadow: 0 0 3px rgb(85, 85, 85);
+  z-index: 1;
+  position: relative;
+}
+.ourlog-image {
+  width: 300px;
+  cursor: pointer;
+  box-shadow: 0 0 3px rgb(85, 85, 85);
   z-index: 1;
   position: relative;
 }
 .linkman {
   background-color: hotpink;
-  display: block;
-  width: 330px;
-  height: 340px;
+  width: 300px;
+  height: 300px;
   z-index: 1;
   opacity: 0;
   position: absolute;
-    top: 20px;
-    right: 485px;
+    top: 0;
+    left: 0;
+}
+.linkman2 {
+  background-color: blue;
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+  opacity: 0;
+  position: absolute;
+    top: 0;
+    right: 0;
 }
 .detail {
   margin-top: 10px;

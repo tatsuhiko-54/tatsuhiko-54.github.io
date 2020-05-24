@@ -1,24 +1,16 @@
 $(window).on("load", function(){
   //最初消しとく
   $(".footer__btn").css('display' , 'none')
-  $(".title").css('opacity' , '0')
-  $(".detail").css('opacity' , '0')
+  $(".top-image").delay(300).fadeIn(1000);
   //feed in
   $(".content").css('display' , 'none')
-  $(".footer").css('display' , 'none')
   $('.content').delay(300).fadeIn(1000);
+  $(".footer").css('display' , 'none')
   $('.footer').delay(300).fadeIn(1000);
+  //一文字ずつ
+
 });
-//ボタンの設置
-window.onscroll = function(){
-  var scrollTop = window.pageYOffset ;
-  if (scrollTop > 100 ) { 
-    $('.footer__btn').fadeIn(200);
-  }
-  if (scrollTop == 0 ) { 
-    $(".footer__btn").fadeOut(200);
-  }
-}
+
 
 $(function(){
   //スクロール
@@ -43,4 +35,37 @@ $(function(){
   $(".header__title").on('click', function(){
     location.reload();
   })
+  //写真
+  window.onscroll = function(){
+    var scrollTop = window.pageYOffset ;
+
+    if (scrollTop == 0 ) { 
+    $(".top-image").css('opacity', '1')
+    $('.top-image').css('transition', '0.5s')
+
+    $(".man-2").css('opacity', '0')
+    $('.man-2').css('transition', '0.5s')
+    }
+    if (scrollTop > 10 ) { 
+      $(".top-image").css('opacity', '0')
+      $('.top-image').css('transition', '0.5s')
+    
+      $(".man-2").css('opacity', '1')
+      $('.man-2').css('transition', '0.5s')
+    }
+    if (scrollTop > 50 ) { 
+      $('.footer__btn').fadeIn(200);
+    }
+    if (scrollTop == 0 ) { 
+      $(".footer__btn").fadeOut(200);
+    }
+    if (scrollTop > 900 ) { 
+      $('.giga-man').css('background-color', 'skyblue');
+      $('.giga-man').css('transition', '1.3s')
+    }
+    if (scrollTop < 1400 ) { 
+      $('.giga-man').css('background-color', '');
+      $('.giga-man').css('transition', '1.0s')
+    }
+  }
 })
