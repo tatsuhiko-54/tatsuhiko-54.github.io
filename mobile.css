@@ -116,16 +116,16 @@
   }
   
   .furima-image {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     cursor: pointer;
     box-shadow: 0 0 3px rgb(85, 85, 85);
     z-index: 1;
     position: relative;
   }
   .ourlog-image {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     cursor: pointer;
     box-shadow: 0 0 3px rgb(85, 85, 85);
     z-index: 1;
@@ -133,8 +133,8 @@
   }
   .linkman {
     background-color: hotpink;
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     z-index: 1;
     margin: 20px;
     opacity: 0;
@@ -144,8 +144,8 @@
   }
   .linkman2 {
     background-color: blue;
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 10px;
     margin: 20px;
     z-index: 1;
     opacity: 0;

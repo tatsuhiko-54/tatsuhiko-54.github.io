@@ -18,6 +18,10 @@ $(function(){
   $(".footer__btn").on("click", function(){
     $( 'html,body' ).animate( {scrollTop:0}, 'slow' );
   })
+  $(".gy-btn").on('click', function(){
+    $( 'html,body' ).animate( {scrollTop:1500}, 'slow' );
+  })
+
 
   //説明文
   $(".linkman").on("mouseover", function(){

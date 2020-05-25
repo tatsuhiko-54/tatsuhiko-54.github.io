@@ -11,11 +11,11 @@
   .header__title {
     cursor: pointer;
     color: #d6d5d5;
-    font-size: 23px;
+    font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     position: absolute;
-      top: 15px;
+      top: 16px;
       left: 60px;
   }
   .header__title:hover {
@@ -24,16 +24,27 @@
   }
   .header__nav {
     cursor: pointer;
+    display: flex;
     position: absolute;
-      top: 20px;
+      top: 11px;
       right: 110px;
   }
   .headlink {
     color: lightgray;
     text-decoration: none;
+    font-size: 20px;
     padding: 10px;
   }
   .headlink:hover {
+    color: #ffffff;
+  }
+  .gy-btn {
+    color: lightgray;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .gy-btn:hover {
     color: #ffffff;
   }
   
@@ -46,7 +57,7 @@
     position: relative;
   }
   .top-image {
-    margin-left: 420px;
+    margin-left: 395px;
     margin-top: 140px;
     z-index: 1;
   }
@@ -54,7 +65,7 @@
     z-index: 0;
     position: absolute;
       top: 140px;
-      left: 420px;
+      left: 395px;
     opacity: 0;
   }
   
@@ -74,6 +85,9 @@
     font-size: 45px;
     text-align: center;
   }
+  .box-bon {
+    border-radius: 10px;
+  }
   .skill-list {
     display: flex;
     align-items: center;
@@ -87,6 +101,7 @@
     margin-top: 70px;
     padding-left: 38px;
   }
+
   .ht {
     width: 100px;
     height: 114px;
