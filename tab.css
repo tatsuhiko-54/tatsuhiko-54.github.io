@@ -1,4 +1,4 @@
-@media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
+@media screen and (max-width: 767px) { 
   .header {
     width: 100%;
     height: 55px;
@@ -11,22 +11,23 @@
   .header__title {
     cursor: pointer;
     color: #d6d5d5;
-    font-size: 23px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     position: absolute;
-      top: 15px;
-      left: 60px;
+      top: 20px;
+      left: 15px;
   }
   .header__title:hover {
     text-decoration: none;
     color: #ffffff;
   }
   .header__nav {
+    font-size: 15px;
     cursor: pointer;
     position: absolute;
-      top: 20px;
-      right: 110px;
+      top: 25px;
+      right: 5px;
   }
   .headlink {
     color: lightgray;
@@ -45,21 +46,27 @@
     margin: 0 auto;
     position: relative;
   }
+  .image-man {
+    position: relative;
+    width: 100%;
+  }
   .top-image {
-    margin-left: 420px;
+    width: 100%;
+    text-align: center;
     margin-top: 140px;
-    z-index: 1;
+    z-index: 0;
   }
   .man-2 {
-    z-index: 0;
+    width: 100%;
+    z-index: 1;
     position: absolute;
       top: 140px;
-      left: 420px;
+      left: 0;
     opacity: 0;
   }
   
   .title-man {
-    font-size: 55px;
+    font-size: 35px;
     text-align: center;
     /* margin-left: 325px; */
   }
@@ -71,52 +78,29 @@
   .skill {
     margin-top: 280px;
     margin-bottom: 40px;
-    font-size: 45px;
+    font-size: 35px;
     text-align: center;
   }
   .skill-list {
     display: flex;
     align-items: center;
+    margin: 0 auto;
+    padding-left: 50px;
     /* margin-left: 170px; */
-    justify-content: space-around;
   }
   .skill-list2{
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-top: 70px;
-    padding-left: 38px;
-  }
-  .ht {
-    width: 100px;
-    height: 114px;
-  }
-  .cs {
-    width: 140px;
-    height: 150px;
-  }
-  .jpn {
-    width: 100px;
-    height: 114px;
-  }
-  .ruby {
-    height: 110px;
-    width: 110px;
-  }
-  .rails {
-    height: 230px;
-    width: 220px;
-  }
-  .git {
-    height: 160px;
-    width: 160px;
+    padding-left: 5px;
   }
   
   
   .works {
     margin-top: 110px;
     margin-bottom: 60px;
-    font-size: 45px;
+    font-size: 35px;
     text-align: center;
   }
   
@@ -124,22 +108,24 @@
     margin: 0 auto;
     border-radius: 10px;
     padding: 20px;
-    width: 900px;
-    height: 300px;
+    /* width: 900px; */
+    /* height: 300px; */
     display: flex;
     justify-content: space-between;
     position: relative;
   }
   
   .furima-image {
-    width: 300px;
+    width: 170px;
+    height: 170px;
     cursor: pointer;
     box-shadow: 0 0 3px rgb(85, 85, 85);
     z-index: 1;
     position: relative;
   }
   .ourlog-image {
-    width: 300px;
+    width: 170px;
+    height: 170px;
     cursor: pointer;
     box-shadow: 0 0 3px rgb(85, 85, 85);
     z-index: 1;
@@ -147,9 +133,10 @@
   }
   .linkman {
     background-color: hotpink;
-    width: 300px;
-    height: 300px;
+    width: 170px;
+    height: 170px;
     z-index: 1;
+    margin: 20px;
     opacity: 0;
     position: absolute;
       top: 0;
@@ -157,8 +144,9 @@
   }
   .linkman2 {
     background-color: blue;
-    width: 300px;
-    height: 300px;
+    width: 170px;
+    height: 170px;
+    margin: 20px;
     z-index: 1;
     opacity: 0;
     position: absolute;
@@ -174,7 +162,7 @@
   
   .footer {
     width: 100%;
-    height: 145px;
+    /* height: 115px; */
     background-color: rgba(27, 27, 27, 0.925);
     color: lightgray;
     display: flex;
@@ -182,30 +170,32 @@
     margin-top: 100px;
   }
   .footer__title {
-    font-size: 23px;
+    font-size: 18px;
     color: #ffffff;
     margin: 40px 60px;
   }
   .copy {
     text-align: center;
     margin-top: 115px;
-    margin-left: 280px;
-    font-size: 10px;
+    margin-right: 150px;
+    font-size: 2px;
+    display: none;
+
   }
   .footer__btn {
     cursor: pointer;
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     z-index: 10;
     position: fixed;
-    bottom: 20px;
+    bottom: 15px;
     right: 32px;
     background-color: rgba(27, 27, 27, 0.925);
-    line-height: 80px;
+    line-height: 70px;
     text-align: center;
     border-radius: 60px;
-    font-size: 20px;
-    padding: 15px;
+    font-size: 18px;
+    /* padding: 15px; */
     color: white;
     border: solid #f6f6f6;
   }
@@ -213,4 +203,5 @@
     transform: scale(1.1, 1.1);
     transition: all 0.1s ease;
   }
+
 }
