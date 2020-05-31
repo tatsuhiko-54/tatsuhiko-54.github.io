@@ -1,6 +1,8 @@
 $(window).on("load", function(){
   //最初消しとく
   $(".footer__btn").css('display' , 'none')
+  $(".skill-list").css('display' , 'none')
+  $(".skill-list2").css('display' , 'none')
   $(".top-image").delay(300).fadeIn(1000);
   //feed in
   $(".content").css('display' , 'none')
@@ -70,6 +72,17 @@ $(function(){
     if (scrollTop < 1400 ) { 
       $('.giga-man').css('background-color', '');
       $('.giga-man').css('transition', '1.0s')
+    }
+    //skilllist
+    if (scrollTop > 500 ) { 
+      $('.skill-list').fadeIn(1000);
+    }
+    if (scrollTop > 750 ) { 
+      $('.skill-list2').fadeIn(1000);
+    }
+    if (scrollTop == 0 ) { 
+      $('.skill-list').css('display' , 'none')
+      $('.skill-list2').css('display' , 'none')
     }
   }
 })
